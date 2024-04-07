@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 const Button = styled.button`
-    background: ${(props) => props.primary ? 'skyblue' : 'gray'};
-    color: ${(props) => props.primary ? props.theme.colors.white : props.theme.colors.black};
-    padding: 10px 20px;
+    background: ${(props) => props.default ? 'skyblue' : 'gray'};
+    color: ${(props) => props.default ? props.theme.colors.white : props.theme.colors.black};
+    padding: 10px;
     border: 0;
 `
 
