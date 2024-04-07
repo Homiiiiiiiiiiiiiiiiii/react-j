@@ -15,14 +15,15 @@ function Footer(){
                     <Link to="/">고객센터</Link>
                 </li>
             </CorpList>
-            <p  className="copyright">copyright ⓒ 2024 company. All right reserved</p>
+            <p  className="copyright">copyright ⓒ 2024 company.                                                                                                                                                All right reserved</p>
         </FooterStyle>
     )
 }
 const FooterStyle = styled.footer`
-    background-color : #eee;
+    background-color : ${(props) => props.theme.colors.gray[100]};
     padding : 20px 0;
     text-align : center;
+    // font-family: "Noto Serif KR", serif;
     .copyright{
         margin-top:20px; 
         opacity:0.5;

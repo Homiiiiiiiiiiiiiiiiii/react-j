@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom"
+import Button from "../button/Button"
 
 function Header(){
 
@@ -20,6 +21,12 @@ function Header(){
                     </li>
                 </ul>
             </nav>
+
+            <div>
+                <Button primary>마이페이지</Button>
+                <Button>마이페이지</Button>
+                {/* <GhostButton>로그인</GhostButton> */}
+            </div>
         </header>
     )
 }
