@@ -8,7 +8,7 @@ function Header(){
     const location = useLocation() //리액트에서 제공하는 현재위치
 
     return(
-        <header className="flex justify-between items-center bg-gray-300 p-5 ">
+        <header className="flex flex-col md:flex-row justify-between items-center bg-gray-300 p-5 ">
             <h1 className="font-bold text-3xl text-secondary">logo</h1>
             <Gnb>
                 <ul>
@@ -24,10 +24,10 @@ function Header(){
                 </ul>
             </Gnb>
 
-            <div>
+            <Util>
                 <Button default>마이페이지</Button>
                 <Button>마이페이지</Button>
-            </div>
+            </Util>
         </header>
     )
 }
@@ -35,9 +35,16 @@ function Header(){
 // const Gnb = tw.nav`
 //     bg-secondary p-3
 // `
+
+const Util = styled.div`
+    ${tw`hidden md:block`}
+`
+
+
 const Gnb = styled.nav`
     ul{
         ${tw`flex gap-6`}
+        /* border : 1px solid #fff */
     }
     li{
         a{
